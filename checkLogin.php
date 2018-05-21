@@ -21,9 +21,9 @@ session_start();
 		$row=mysqli_fetch_object($res);
 		$_SESSION['aid']=$row->id;
 		$_SESSION['name']=$row->name;
-		echo $_SESSION['name'];
-		
-	$_SESSION['loginmsg']="<h4 style='color:forestgreen'>You are login successfully</h4>";
+		setcookie("name",$_SESSION['name']);
+		echo $_COOKIE["name"];
+	    $_SESSION['loginmsg']="<h4 style='color:forestgreen'>You are login successfully</h4>";
 		header("location:dashboard.php");
 	}
 

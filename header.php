@@ -1,10 +1,6 @@
 <?php
 session_start();
-if(empty($_SESSION['aid'])){
-	echo $_SESSION['msg']= "<h4 style='position:absolute;top:4px;right:25px;color:white;'>Guest You are not login</h4>";
-	}else{
-	echo $_SESSION['msg']= "<h4 style='position:absolute;top:4px;right:25px;color:white;'>Welcome You are login</h4>";
-}
+
 ?>
 		<header>
 			<div class="col-sm-8" id="searchbar">
@@ -14,8 +10,9 @@ if(empty($_SESSION['aid'])){
 				</form>
 			</div>
 			<div class="col-sm-4">
-
-				<!--<h4 id="welcometext">Welcome &nbsp;<?php echo $_SESSION['name'];?>&nbsp;<i class="fa fa-user-circle" style="font-size:22px;"></i></h4>-->
+			
+			
+			<h4 id="welcometext">Welcome &nbsp;<span id="username">Guest</span>&nbsp;<i class="fa fa-user-circle" style="font-size:22px;"></i></h4>
 			</div>
 		</header>
 		<section id="logobar">

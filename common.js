@@ -7,11 +7,28 @@
 
 			});
 
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
 			function submitLogin() {
 				validatelogin();
 				console.log('form submitted post validation');
 				var email = $("#email").val();
 				var password = $("#password").val();
+				
 				$.ajax({
 					url: 'checkLogin.php',
 					type: 'POST',
@@ -20,12 +37,12 @@
 						password: password
 					},
 					success: function (response) {
-					console.log(response);
 						$("#result").html(response);
+						$name = getCookie('name');
+						$("#username").text($name);
+						//document.getElementById('username').innerHTML = $name;
 					}
 				});
-
-
 			}
 
 			//********************************************************************************
@@ -414,7 +431,7 @@
 				}
 				xhttp.onreadystatechange = function () {
 					if (this.readyState == 4 && this.status == 200) {
-						document.getElementById("childPage").innerHTML = this.responseText;
+						window.location.href = 'index.php';
 					}
 				};
 				xhttp.open("GET", "logout.php", true);
