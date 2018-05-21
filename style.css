@@ -1,0 +1,401 @@
+
+			body {
+				font-family: 'Alegreya', sans-serif;
+				background-color: #F0F8FC;
+				margin: 0px;
+				padding: 0px;
+				overflow-y: scroll;
+				overflow-x: hidden;
+
+			}
+
+			header {
+				min-height: 50px;
+				width: 100%;
+				background-color: darkblue;
+				text-align: center;
+				color: white;
+				font-size: 18px;
+
+			}
+
+			#searchbox {
+				color: grey;
+				width: 200px;
+				font-size: 18px;
+			}
+
+			#searchbtn {
+				padding: 4px;
+				text-align: center;
+				border-radius: 15px;
+				background-color: forestgreen;
+
+
+			}
+
+
+
+			#welcometext a {
+				text-decoration: none;
+				color: white;
+				font-size: bold;
+			}
+
+
+			#nav {
+				background-color: #15628E;
+			}
+
+			#logobar {
+				min-height: 180px;
+				background-color: white;
+			}
+
+			#btn {
+				background-color: #0D9015;
+				margin: 30px;
+				margin-top: 50px;
+				padding: 10px;
+				color: white;
+				width: 190px;
+				border-radius: 23px;
+				font-weight: bold;
+
+			}
+
+			#navlist {
+				padding: 0px;
+				background-color: darkblue;
+				min-height: 50px;
+				margin-bottom: 20px;
+
+
+			}
+
+			#navlist ul li {
+				display: inline;
+
+			}
+
+
+
+			#navlist ul li>a {
+				text-decoration: none;
+				font-size: 18px;
+				font-weight: bold;
+				font-family: Alegreya;
+				margin-left: 50px;
+				padding-left: 30px;
+				padding-right: 30px;
+				color: white;
+				background-color: darkblue;
+
+
+			}
+
+
+			#navlist ul li>a:visited {
+				background-color: darkblue;
+
+			}
+
+			#navlist ul li>a:hover {
+				background-color: #0D9015;
+
+			}
+
+			#navlist ul li>a.active {
+				background-color: #0D9015;
+
+			}
+
+			blockquote {
+				font-size: 50px;
+				text-align: center;
+				color: #7D209B;
+				padding-top: 119px;
+				padding-bottom: 119px;
+
+			}
+
+			#quote2 {
+				background-color: azure;
+				min-height: 400px;
+				padding-bottom: 20px;
+				padding-top: 20px;
+				margin-bottom: 20px;
+				font-family: cursive;
+			}
+
+			.carousel-inner {
+				max-height: 500px;
+				border: 20px solid darkblue;
+				margin-bottom: 20px;
+				padding-top: 0px;
+			}
+
+			.item,
+			item active {
+				background-color: azure;
+			}
+
+
+			#btn2 {
+				background-color: #0D9015;
+				width: 300px;
+				padding: 15px;
+				font-size: 20px;
+				font-weight: bold;
+				border-radius: 23px;
+				margin-bottom: 20px;
+
+			}
+
+			h3 {
+				color: white;
+				font-weight: bold;
+
+			}
+
+			aside {
+				color: white;
+				font-size: 16px;
+				font-weight: bold;
+			}
+
+			/******* Styling Contact Float Button *******/
+
+			.contactUs-float {
+				background-color: #0D9015;
+				float: right;
+				transform: rotate(90deg);
+				-ms-transform: rotate(90deg);
+				-webkit-transform: rotate(90deg);
+				transform-origin: right top 0;
+				-webkit-transform-origin: right top 0;
+				z-index: 999;
+				position: fixed;
+				right: 0;
+				top: 476px;
+			}
+
+			.contactUs-float a {
+				color: white;
+				float: right;
+				font-size: 20px;
+				line-height: 28px;
+				letter-spacing: 2px;
+				padding: 15px 20px 16px;
+				text-transform: uppercase;
+				font-family: 'Alegreya', sans-serif;
+			}
+
+			.contactUs-float:hover {
+				background-color: darkblue;
+			}
+
+
+			/******* Styling of follow us container *******/
+
+			#follow {
+				background-color: darkblue;
+				background: linear-gradient(30deg, darkblue, #0D9015, darkblue);
+				padding: 30px;
+				text-align: center;
+				padding-bottom: 80px;
+				margin-bottom: 10px;
+			}
+
+
+			/********Styling of Collection page**************/
+
+			#collectionbox {
+				min-height: 300px;
+				width: 100%;
+				text-align: center;
+				font-family: 'Alegreya', sans-serif;
+				font-size: 40px;
+				font-weight: bold;
+				background-color: #15628E;
+				background: linear-gradient(30deg, darkblue, #0D9015, darkblue);
+				padding-top: 120px;
+				margin-bottom: 25px;
+
+			}
+
+			#collectionbox a {
+				color: white;
+				text-decoration: none;
+				display: inline;
+			}
+
+			#collectionbox a:hover {
+				color: yellowgreen;
+			}
+
+			ol>li {
+				color: darkcyan;
+			}
+
+
+
+
+			/******* Styling of New add page ************************/
+
+			#added {
+				font-weight: bold;
+				font-family: 'Alegreya';
+				color: #7D209B;
+				font-size: 25px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				text-align: center;
+			}
+
+
+			/******* Styling of Get involved page ******************/
+
+			#button1 {
+				width: 130px;
+				padding: 10px;
+				margin-left: 10px;
+				text-align: center;
+				background-color: #0D9015;
+				border-radius: 23px;
+				color: white;
+				font-weight: bold;
+			}
+
+			#button2 {
+				width: 130px;
+				padding: 10px;
+				text-align: center;
+				background-color: #CC5751;
+				border-radius: 23px;
+				color: white;
+				font-weight: bold;
+			}
+
+			/********styling of dashboard/login page common style********/
+
+			label {
+
+				font-size: 20px;
+				font-weight: bold;
+				color: #7D209B;
+			}
+			
+			
+			
+			
+			/********styling of About page common style*******************/
+			
+			#aboutintro{
+		background:#15628E; 
+			background: linear-gradient(30deg,darkblue,#0D9015,darkblue);
+		font-family:'Alegreya',sans-serif; 
+		font-size:20px; 
+		font-weight:bold; 
+		padding:60px;
+	 color:white;
+		margin-bottom:30px;
+		min-height:300px;
+	}
+	
+	#who{
+	color:#7D209B;
+		font-size:25px; 
+		font-weight: bold;
+		font-family:'Alegreya',sans-serif; 
+	}
+
+			/***************styling of register page  style****************/
+
+			#btnlog {
+
+				color: white;
+				width: 200px;
+				padding-top: 10px;
+				padding-left: 0px;
+				margin: 5px;
+				height: 50px;
+				background-color: #0D9015;
+				font-family: 'Alegreya';
+			}
+
+
+			#labelregister {
+				font-size: 15px;
+				font-weight: bold;
+				color: #7D209B;
+			}
+
+/***************styling of newadd page  style****************/
+			
+			.carousel-indicators ol>li {
+			color: darkcyan;
+		}
+
+		
+
+		#added {
+			font-weight: bold;
+			font-family: 'Alegreya';
+			color: #7D209B;
+			font-size: 25px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			text-align: center;
+		}
+
+
+#btnlog {
+
+		color: white;
+		width: 200px;
+		padding-top: 10px;
+		padding-left: 0px;
+		margin: 5px;
+		height: 50px;
+		background-color: #0D9015;
+		font-family: 'Alegreya';
+	}
+
+	label {
+
+		font-size: 20px;
+		font-weight: bold;
+		color: #7D209B;
+	}
+
+	#panel {
+		padding: 50px;
+		padding-bottom: 112px;
+	}
+
+	#btnlog1 {
+		background-color: #0D9015;
+		margin-top: 10px;
+		padding: 10px;
+		padding-left: 10px;
+		color: white;
+		width: 160px;
+		border-radius: 23px;
+		font-weight: bold;
+		font-family: 'Alegreya';
+
+	}
+
+
+label {
+
+		font-size: 20px;
+		font-weight: bold;
+		color: #7D209B;
+	}
+
+	#panel {
+		padding: 50px;
+		padding-bottom: 112px;
+	}
