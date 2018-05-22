@@ -37,7 +37,10 @@ session_start();
      $password = $_POST["password"];
      
 	
-$sql2= "DELETE FROM register WHERE email='$email' AND password='$password'";
+//$sql2= "DELETE FROM register WHERE email='$email' AND password='$password'";
+
+//******************Deleting data manually to check db connection and form action.
+$sql2= "DELETE FROM register WHERE email='testuser9@gmail.com' AND password='999'";
 
 if($conn->query($sql2)===TRUE){
 	echo"<h4 style='color:forestgreen'>record is deleted successfully.</h4>";

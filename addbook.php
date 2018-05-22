@@ -33,8 +33,11 @@ $bookName = $_POST["bookName"];
     
 
 
+//$sql = "INSERT INTO books(name, author, YearOfPublish,language,category)VALUES ('$bookName', '$author','$YearOfPublish','$language','$category')";
+
+//******************Inserting data manually to check db connection and form action.
 $sql = "INSERT INTO books(name, author, YearOfPublish,language,category)
-VALUES ('$bookName', '$author','$YearOfPublish','$language','$category')";
+VALUES ('Warlight', 'Michael ondaatje','2018','English','Historical Fiction')";
 
 
 if ($conn->query($sql) === TRUE) {

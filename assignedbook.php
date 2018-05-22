@@ -59,7 +59,11 @@
 			$email=$_REQUEST['email'];
 			$password=$_REQUEST['password'];
 								
-	 $sql= "select * from reservemybook where email='$email'";
+	 //$sql= "select * from reservemybook where email='$email'";
+								
+	//********This php code fetched the data so manually writing the fetching code to check the form action.******//
+	$sql= "select * from reservemybook where email='user@gmail.com'";						
+								
 	$res = mysqli_query($conn, $sql);
 	while($row = mysqli_fetch_object($res))
 	{

@@ -16,14 +16,14 @@ echo "Connection is established". "<br>"; */
 //*****if submit button is clicked then only print these varaible data.***************
 
 
-/*if(isset($_POST['submit'])){ 
-	echo "email : "; echo $_POST["email"]. "<br>";
+if(isset($_POST['submit'])){ 
+	/*echo "email : "; echo $_POST["email"]. "<br>";
 	echo "bookname : "; echo $_POST["bookName"]. "<br>";
 	echo "authorname : "; echo $_REQUEST["authorname"]. "<br>"; 
 	echo "DateOfBooking : "; echo $_POST["DateOfBooking"]. "<br>"; 
-	echo "Status : "; echo $_POST["status"]. "<br>"; 
+	echo "Status : "; echo $_POST["status"]. "<br>";*/ 
 
-};*/
+
 
 //***********************************************************************************************
 
@@ -34,9 +34,11 @@ $bookName = $_REQUEST['bookName'];
      $DateOfBooking = $_POST['DateOfBooking'];
  $bookstatus = $_POST['bookstatus'];
  
-   $sql = "INSERT INTO reservemybook (email, bookname,DateOfBooking,bookedStatus)
-VALUES ('$email','$bookName','$DateOfBooking','$bookstatus')";
+   //$sql = "INSERT INTO reservemybook (email, bookname,DateOfBooking,bookedStatus)VALUES ('$email','$bookName','$DateOfBooking','$bookstatus')";
 
+//*******************Data is inserted manually to database table to insure database connection and form action.
+
+$sql = "INSERT INTO reservemybook (email, bookname,DateOfBooking,bookedStatus)VALUES ('user@gmail.com','warfield','2018-05-05','true')";//date is in YYYY-MM-DD
 
 if ($conn->query($sql) === TRUE) {
 
@@ -45,6 +47,7 @@ echo"<h4 style='color:forestgreen'>Your Booking Details:</h4>";
 	echo "<h4>Date Of Booking: </h4>"; echo $_POST["DateOfBooking"];
 }else{
 	echo "Error: ". $sql2. "<br>". $conn->error;
+}
 }
 
 $conn->close();

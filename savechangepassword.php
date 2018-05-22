@@ -27,10 +27,14 @@ include("db_connection.php");
 
 
 	 $email = $_POST["email"];
-     $currentpassword = $_REQUEST["password1"];
+     $currentpassword = $_POST["password1"];
      $newpassword = $_POST["password2"];
     
-echo $sql= "UPDATE register SET password = '$newpassword' and confirmPassword='$newpassword' WHERE  password= '$currentpassword' AND email='$email'";
+ //$sql= "UPDATE register SET password = '$newpassword', confirmPassword='$newpassword' WHERE  password= '$currentpassword' AND email='$email'";
+
+//*************Updating password with writing  quary and inserting data manually to check orm and connection.*****//
+
+$sql= "UPDATE register SET password='new34',confirmPassword='new34' WHERE email='testuser3@gmail.com';"; 
 
 if($conn->query($sql)===TRUE){
 	echo"<h4 style='color:forestgreen'>Password change successfully.</h4>";

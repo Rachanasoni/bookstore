@@ -18,33 +18,33 @@
 		<table align="center" class="table table-bordered" cellpadding="10">
 		<thead>
 		<tr>
-		<th>User Name</th><br>
-		<th>Email</th>
-		<th>Password</th>
-		<th>Mobile</th>
+			<th>User Name</th><br>
+			<th>Email</th>
+			<th>Mobile</th>
 			<th>Assigned Books</th>
-		
-			<th>Reserve Books</th>
-		
+			<th>Reserve Booking Date</th>
+			<th>Booking Status</th>
 		</tr>
 		</thead>	
 		<tbody>
 	
 			<?php
 	include("db_connection.php");
+
 			
-	 echo $sql= "select * from user where email='$email'";
+
+$sql="SELECT name,mobile,password,reservemybook.email,reservemybook.bookname,reservemybook.DateOfBooking,reservemybook.bookedStatus FROM register LEFT JOIN reservemybook ON register.email = reservemybook.email";
+
 	$res = mysqli_query($conn, $sql);
 	while($row = mysqli_fetch_object($res))
 	{
 		echo"<tr>";
-		echo"<td>$row->username</td>";"<br>";
+		echo"<td>$row->name</td>";"<br>";
 		echo"<td>$row->email</td>";
-			echo"<td>$row->password</td>";
 		echo"<td>$row->mobile</td>";
-		echo"<td>$row->assignedBooks</td>";
-	
-			echo"<td>$row->reservemyBook</td>";
+		echo"<td>$row->bookname</td>";
+	echo"<td>$row->DateOfBooking</td>";
+			echo"<td>$row->bookedStatus</td>";
 		
 		echo"</tr>";	
 	}
