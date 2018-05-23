@@ -149,24 +149,17 @@ function validatelogin() {
 	var email = $("#email").val();
 	var password = $("#password").val();
 	var status = true;
-	if (email === "") {
+	if (!email) {
 		status = false;
 		$("#email").css("borderColor", "red");
 		$("#email_error").text("Invalid Email");
-	} else {
-		$("#email").css("borderColor", "");
-		$("#email_error").text("");
 	}
-
-
-	if (password === "") {
+	if (!password) {
 		status = false;
 		$("#password").css("borderColor", "red");
 		$("#password_error").text("Invalid password");
-	} else {
-		$("#password").css("borderColor", "");
-		$("#password_error").text("");
-	}
+	} 
+	
 	return status;
 }
 

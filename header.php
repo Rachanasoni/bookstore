@@ -23,8 +23,8 @@ session_start();
 			</div>
 			<div class="col-sm-6 text-right">
 
-				<button class="btn btn-success" id="btn" onclick="loginpage()">LOGIN</button>
-				<button class="btn btn-success" id="btn" onclick="registerpage()">REGISTER</button>
+				<button class="btn btn-success" id="btn" onclick="associatedPage('login')">LOGIN</button>
+				<button class="btn btn-success" id="btn" onclick="associatedPage('register')">REGISTER</button>
 
 			</div>
 		</section>
@@ -32,12 +32,12 @@ session_start();
 		<section id="navlist">
 			<div class="col-sm-12" id="navbar">
 				<ul class="nav navbar-nav">
-					<li><a href="#" class="active" onclick="homepage()">HOME</a></li>
-					<li><a href="#" onclick="aboutpage()">ABOUT US</a></li>
-					<li><a href="#" onclick="collectionpage()">COLLECTION</a></li>
-					<li><a href="#" onclick="newaddpage()">NEWLY ADDED</a></li>
-					<li><a href="#" onclick="popularpage()">MOST POPULAR</a></li>
-					<li><a href="#" onclick="getinvolvedpage()">GET INVOLVED</a></li>
+					<li><a href="#" class="active" onclick="homePage()">HOME</a></li>
+					<li><a href="#" onclick="associatedPage('about')">ABOUT US</a></li>
+					<li><a href="#" onclick="associatedPage('collection')">COLLECTION</a></li>
+					<li><a href="#" onclick="associatedPage('newadd')">NEWLY ADDED</a></li>
+					<li><a href="#" onclick="associatedPage('popular')">MOST POPULAR</a></li>
+					<li><a href="#" onclick="associatedPage('involved')">GET INVOLVED</a></li>
 
 				</ul>
 

@@ -16,19 +16,19 @@ session_start();
 					<section>
 					
 
-						<button class="btn btn-success" id="btnlog" <?php if(empty($_SESSION['name'])){ ?> disabled <?php } ?>  onclick="reservebookpage()" title="Please login to use this feature">Reserve My Book</button><br>
+						<button class="btn btn-success" id="btnlog" <?php if(empty($_SESSION['name'])){ ?> disabled <?php } ?>  onclick="associatedChildPage('reservebook')" title="Please login to use this feature">Reserve My Book</button><br>
 
-						<button class="btn btn-success" id="btnlog" <?php if(empty($_SESSION['name'])){ ?> disabled <?php } ?>  onClick="assignedbook()" title="Please login to use this feature">Assigned Books</button><br>
+						<button class="btn btn-success" id="btnlog" <?php if(empty($_SESSION['name'])){ ?> disabled <?php } ?>  onClick="associatedChildPage('assignbooklogin')" title="Please login to use this feature">Assigned Books</button><br>
 
-						<button class="btn btn-success" id="btnlog" <?php if(empty($_SESSION['name'])){ ?> disabled <?php } ?>  onClick="getinvolvedpage2()" title="Please login to use this feature">Suggessted Books</button><br/>
-
-
-						<button type="button" class="btn btn-success"  <?php if(empty($_SESSION['name'])){ ?> disabled <?php } ?> id="btnlog" onClick="summarypage()" title="Please login to use this feature">Account Summary</button><br/>
-
-						<button class="btn btn-success" id="btnlog"  <?php if(empty($_SESSION['name'])){ ?> disabled <?php } ?> onClick="changepassword()" title="Please login to use this feature">Changed Password</button><br/>
+						<button class="btn btn-success" id="btnlog" <?php if(empty($_SESSION['name'])){ ?> disabled <?php } ?>  onClick="associatedChildPage('involved')" title="Please login to use this feature">Suggessted Books</button><br/>
 
 
-						<button type="button" class="btn btn-success"  <?php if(empty($_SESSION['name'])){ ?> disabled <?php } ?> id="btnlog" onClick="deletepage()" title="Please login to use this feature">Delete Account</button><br/>
+						<button type="button" class="btn btn-success"  <?php if(empty($_SESSION['name'])){ ?> disabled <?php } ?> id="btnlog" onClick="associatedChildPage('summary')" title="Please login to use this feature">Account Summary</button><br/>
+
+						<button class="btn btn-success" id="btnlog"  <?php if(empty($_SESSION['name'])){ ?> disabled <?php } ?> onClick="associatedChildPage('changepassword')" title="Please login to use this feature">Changed Password</button><br/>
+
+
+						<button type="button" class="btn btn-success"  <?php if(empty($_SESSION['name'])){ ?> disabled <?php } ?> id="btnlog" onClick="associatedChildPage('delete')" title="Please login to use this feature">Delete Account</button><br/>
 
 
 						<button class="btn btn-success" id="btnlog"  <?php if(empty($_SESSION['name'])){ ?> disabled <?php } ?> onClick="logoutpage()" title="Please login to use this feature">Logout</button>

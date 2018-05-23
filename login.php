@@ -35,7 +35,7 @@ session_start();
 					<br>
 					<div class="row form-group">
 						<div class="col-sm-12">
-							<caption><a href="#" onclick="forgotpasswordpage()">Forgot your password</a></caption>
+							<caption><a href="#" onClick="associatedPage('forgotpassword')">Forgot your password</a></caption>
 						</div>
 					</div>
 					<br>
